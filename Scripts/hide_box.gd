@@ -8,10 +8,12 @@ signal inside_box
 #BUG: I think there is a conflict on moving to fast through the box and having
 # the animation get stuck on... The problem might be the timer
 func _on_area_2d_body_entered(body):
+	print(body)
 	if body.is_in_group("player"):
 		inside_box.emit()
 		await get_tree().create_timer(0.5).timeout
 		animated_sprite.play()
+		
 		
 
 	elif body.is_in_group("enemy"):

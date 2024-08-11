@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Scripts/level_one.gd" id="1_8rhj3"]
 [ext_resource type="Texture2D" uid="uid://1hqlicjmr6mh" path="res://Art/Epithetsoup_Art/BoxesBackgroundHospital.png" id="1_vlwdu"]
 [ext_resource type="TileSet" uid="uid://catlcjnv1yi5y" path="res://Scenes/Levels/Resources/TileMap.tres" id="2_yc3vp"]
-[ext_resource type="PackedScene" uid="uid://bgilnlg6p1rgr" path="res://Scenes/Characters/Enemies/flea.tscn" id="3_v8jr7"]
 [ext_resource type="PackedScene" uid="uid://cafecky8rnrt3" path="res://Scenes/Levels/end_level_door.tscn" id="4_q74nt"]
 [ext_resource type="PackedScene" uid="uid://bh8qcvtn1i6pt" path="res://Scenes/Characters/pouncer_two.tscn" id="6_r5ykf"]
 [ext_resource type="PackedScene" uid="uid://siia3dyjrfk" path="res://Scenes/Levels/Items/mousey_toy.tscn" id="7_8kuja"]
@@ -11,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://dxirran45grg" path="res://Art/SoundFX/Kitty Kung Fu 02.ogg" id="9_jpfcv"]
 [ext_resource type="PackedScene" uid="uid://dxbc40kwl5tqu" path="res://Scenes/Levels/Items/moving_box.tscn" id="11_l488n"]
 [ext_resource type="PackedScene" uid="uid://jkdud0n728gy" path="res://Scenes/Levels/Menus/game_over_menu.tscn" id="11_u2gys"]
+[ext_resource type="PackedScene" uid="uid://dfrx1xljf21ov" path="res://Scenes/Characters/Enemies/flea_two.tscn" id="12_s86wb"]
 
 [node name="LevelOne" type="Node2D"]
 script = ExtResource("1_8rhj3")
@@ -38,9 +38,6 @@ offset_right = 2223.0
 offset_bottom = 649.0
 texture = ExtResource("1_vlwdu")
 metadata/_edit_group_ = true
-
-[node name="EndLevelDoor" parent="." instance=ExtResource("4_q74nt")]
-position = Vector2(-523, 250)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_yc3vp")
@@ -74,13 +71,14 @@ position = Vector2(786, 329)
 [node name="MovingBox4" parent="." instance=ExtResource("11_l488n")]
 position = Vector2(-61, 394)
 
-[node name="Flea" parent="." instance=ExtResource("3_v8jr7")]
-position = Vector2(-258, 470)
+[node name="FleaTwo" parent="." instance=ExtResource("12_s86wb")]
+position = Vector2(-260, 471)
 
-[node name="Flea2" parent="." instance=ExtResource("3_v8jr7")]
-position = Vector2(-109, 470)
-speed = 75.0
-move_spaces = 400
+[node name="FleaTwo2" parent="." instance=ExtResource("12_s86wb")]
+position = Vector2(-173, 471)
+
+[node name="EndLevelDoor" parent="." instance=ExtResource("4_q74nt")]
+position = Vector2(-487, 296)
 
 [node name="GameOverMenu" parent="." instance=ExtResource("11_u2gys")]
 visible = false

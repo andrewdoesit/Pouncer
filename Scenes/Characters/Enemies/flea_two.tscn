@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://dfrx1xljf21ov"]
+
+[ext_resource type="Texture2D" uid="uid://bj528oa1abnll" path="res://Art/Epithetsoup_Art/flea.png" id="1_242wb"]
+[ext_resource type="Script" path="res://Scripts/flea_two.gd" id="1_nfcdf"]
+[ext_resource type="Script" path="res://Scripts/components/GravityComponent.gd" id="3_k4nlk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6v1va"]
+atlas = ExtResource("1_242wb")
+region = Rect2(0, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boulu"]
+atlas = ExtResource("1_242wb")
+region = Rect2(46, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pu1wk"]
+atlas = ExtResource("1_242wb")
+region = Rect2(0, 46, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2n27p"]
+atlas = ExtResource("1_242wb")
+region = Rect2(46, 46, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqkuu"]
+atlas = ExtResource("1_242wb")
+region = Rect2(0, 92, 46, 46)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q3rd3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6v1va")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boulu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pu1wk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2n27p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqkuu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sqid"]
+size = Vector2(26, 15)
+
+[node name="FleaTwo" type="CharacterBody2D" groups=["enemy"]]
+script = ExtResource("1_nfcdf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_q3rd3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_3sqid")
+
+[node name="CompCharactersGravity" type="Node" parent="." node_paths=PackedStringArray("character")]
+script = ExtResource("3_k4nlk")
+character = NodePath("..")

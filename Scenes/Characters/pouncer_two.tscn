@@ -248,7 +248,7 @@ animations = [{
 size = Vector2(20, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gy6em"]
-size = Vector2(21, 24)
+size = Vector2(21, 22)
 
 [node name="PouncerTwo" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_j1wlf")
@@ -271,7 +271,7 @@ shape = SubResource("RectangleShape2D_och4q")
 [node name="HitArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
-position = Vector2(1, 2)
+position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_gy6em")
 
 [node name="CoyoteTimer" type="Timer" parent="."]

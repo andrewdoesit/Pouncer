@@ -11,6 +11,8 @@ var was_on_floor := false
 
 func _physics_process(delta):
 	var input_direction = Input.get_vector("left", "right", "up", "down")
+
+	
 	if input_direction: # Plays the run animation and idle
 		pouncer.play("run")
 	else:
