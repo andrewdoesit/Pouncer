@@ -264,13 +264,13 @@ text = "CREDITS"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 238.0
-offset_top = 124.0
-offset_right = 888.0
-offset_bottom = 217.0
+offset_left = 123.0
+offset_top = 137.0
+offset_right = 979.0
+offset_bottom = 230.0
 theme_override_colors/font_color = Color(0.839216, 0.694118, 0, 1)
 theme_override_font_sizes/font_size = 68
-text = "TO BE ANNOUNCED"
+text = "DINGER'S BIG ADVENTURE"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 717.0
@@ -290,10 +290,10 @@ scale = Vector2(3.53261, 3.53261)
 sprite_frames = SubResource("SpriteFrames_elshl")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(556, 106)
+position = Vector2(556, 136)
 scale = Vector2(1.91304, 1.91304)
 sprite_frames = SubResource("SpriteFrames_be2ir")
-frame_progress = 0.652094
+frame_progress = 0.912108
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
 position = Vector2(943, 487)
@@ -301,7 +301,7 @@ scale = Vector2(4.19565, 4.19565)
 sprite_frames = SubResource("SpriteFrames_qj0dv")
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
-position = Vector2(956, 130)
+position = Vector2(1032, 146)
 scale = Vector2(2.34375, 2.34375)
 sprite_frames = SubResource("SpriteFrames_ci21e")
 

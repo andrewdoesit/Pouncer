@@ -26,7 +26,6 @@ offset_top = 5.0
 offset_right = 961.0
 offset_bottom = 645.0
 texture = ExtResource("1_p5xws")
-metadata/_edit_group_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="TextureRect"]
 layout_mode = 0
@@ -55,6 +54,33 @@ offset_left = 2040.0
 offset_right = 3188.0
 offset_bottom = 640.0
 texture = ExtResource("1_p5xws")
+
+[node name="TextureRect6" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1622.0
+offset_top = -701.0
+offset_right = 2770.0
+offset_bottom = -61.0
+texture = ExtResource("1_p5xws")
+flip_v = true
+
+[node name="TextureRect7" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 550.0
+offset_top = -701.0
+offset_right = 1698.0
+offset_bottom = -61.0
+texture = ExtResource("1_p5xws")
+flip_v = true
+
+[node name="TextureRect8" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = -208.0
+offset_top = -691.0
+offset_right = 940.0
+offset_bottom = -51.0
+texture = ExtResource("1_p5xws")
+flip_v = true
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("5_qvly8")]
 position = Vector2(-290, 262)

@@ -28,20 +28,20 @@ texture = ExtResource("1_jao61")
 
 [node name="RestartGame" type="Button" parent="."]
 layout_mode = 0
-offset_left = 57.0
-offset_top = 43.0
-offset_right = 327.0
-offset_bottom = 154.0
+offset_left = 180.0
+offset_top = 219.0
+offset_right = 872.0
+offset_bottom = 330.0
 theme_override_font_sizes/font_size = 75
 text = "Restart"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 396.0
-offset_top = 368.0
-offset_right = 662.0
-offset_bottom = 418.0
+offset_left = 364.0
+offset_top = 380.0
+offset_right = 674.0
+offset_bottom = 430.0
 theme_override_font_sizes/font_size = 36
-text = "Kitty Flea Shots"
+text = "FREE KITTY SHOTS"
 
 [connection signal="pressed" from="RestartGame" to="." method="_on_restart_game_pressed"]
