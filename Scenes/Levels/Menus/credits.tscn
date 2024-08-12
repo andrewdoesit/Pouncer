@@ -33,12 +33,12 @@ offset_bottom = 605.0
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 139.0
-offset_top = 387.0
-offset_right = 1076.0
-offset_bottom = 508.0
+offset_left = 60.0
+offset_top = 383.0
+offset_right = 1092.0
+offset_bottom = 504.0
 theme_override_colors/font_color = Color(0.425809, 0.000149398, 0.436033, 1)
 theme_override_font_sizes/font_size = 28
-text = "Special Thanks: StubbyCactus, VidyaVinnie, Mehxit, and Loweffortzz"
+text = "Special Thanks: StubbyCactus, VidyaVinnie, Mehxit, and Loweffortzz and You"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

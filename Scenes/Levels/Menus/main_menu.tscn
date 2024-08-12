@@ -273,6 +273,7 @@ theme_override_font_sizes/font_size = 68
 text = "DINGER'S BIG ADVENTURE"
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 717.0
 offset_top = 368.0
 offset_right = 1144.0
@@ -285,7 +286,7 @@ stream = ExtResource("2_55kit")
 autoplay = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(201, 478)
+position = Vector2(216, 382)
 scale = Vector2(3.53261, 3.53261)
 sprite_frames = SubResource("SpriteFrames_elshl")
 
@@ -304,6 +305,15 @@ sprite_frames = SubResource("SpriteFrames_qj0dv")
 position = Vector2(1032, 146)
 scale = Vector2(2.34375, 2.34375)
 sprite_frames = SubResource("SpriteFrames_ci21e")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 478.0
+offset_right = 311.0
+offset_bottom = 517.0
+theme_override_font_sizes/font_size = 28
+text = "space = jump"
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
