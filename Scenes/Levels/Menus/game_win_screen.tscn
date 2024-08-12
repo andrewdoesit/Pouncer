@@ -1,0 +1,121 @@
+[gd_scene load_steps=15 format=3 uid="uid://b3yxu3rdbhklj"]
+
+[ext_resource type="Texture2D" uid="uid://ccd2c50islbhh" path="res://Art/Epithetsoup_Art/animatedbackground.png" id="1_aygwq"]
+[ext_resource type="Texture2D" uid="uid://ddcphl4ryqxhv" path="res://Art/Epithetsoup_Art/youwin.png" id="1_hwk1y"]
+[ext_resource type="Script" path="res://Scripts/game_win_screen.gd" id="1_o03lp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muf3r"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(0, 0, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wsy88"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(148, 0, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uclng"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(296, 0, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbu5x"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(444, 0, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvxnn"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(592, 0, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfgm6"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(0, 83, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt3hb"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(148, 83, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_reopr"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(296, 83, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrp6o"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(444, 83, 148, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8xr8"]
+atlas = ExtResource("1_aygwq")
+region = Rect2(592, 83, 148, 83)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o4cmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muf3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wsy88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uclng")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbu5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvxnn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfgm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mt3hb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_reopr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrp6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8xr8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GameWinScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o03lp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(582.5, 334.5)
+scale = Vector2(8.49324, 8.3494)
+sprite_frames = SubResource("SpriteFrames_o4cmw")
+frame_progress = 0.815448
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_hwk1y")
+
+[node name="HomeButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 464.0
+offset_right = 473.0
+offset_bottom = 610.0
+
+[node name="CreditButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 464.0
+offset_right = 889.0
+offset_bottom = 607.0
+
+[connection signal="pressed" from="HomeButton" to="." method="_on_home_button_pressed"]
+[connection signal="pressed" from="CreditButton" to="." method="_on_credit_button_pressed"]

@@ -20,12 +20,6 @@ texture = ExtResource("2_wloqi")
 position = Vector2(2, 1)
 shape = SubResource("RectangleShape2D_ev5fg")
 
-[node name="Label" type="Label" parent="."]
-visible = false
-offset_right = 40.0
-offset_bottom = 23.0
-text = "NO MOUSEY"
-
 [node name="Label2" type="Label" parent="."]
 offset_left = -34.0
 offset_top = -70.0

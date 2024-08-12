@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var jump_strength = 100
 @export var speed = 175
 @onready var coyote_timer: Timer = $CoyoteTimer
-
+#var hide_kitty = false
 var was_on_floor := false
 
 func _physics_process(delta):
@@ -40,6 +40,9 @@ func _physics_process(delta):
 
 # Currently the flee kills us
 func _on_hit_area_body_entered(body):
+	#if hide_kitty == false:
 	if body.is_in_group("enemy"):
+		$AudioStreamPlayer2D.play()
+		await get_tree().create_timer(1.0).timeout
 		queue_free()
 

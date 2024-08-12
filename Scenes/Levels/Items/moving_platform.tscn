@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca0cg3umnkuyr"]
+
+[ext_resource type="Texture2D" uid="uid://dmotktbidhc7c" path="res://Art/Epithetsoup_Art/Boximage.png" id="1_dy32b"]
+[ext_resource type="Script" path="res://Scripts/moving_platform.gd" id="1_pj7v2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kmcpr"]
+size = Vector2(118, 31)
+
+[node name="MovingPlatform" type="CharacterBody2D"]
+script = ExtResource("1_pj7v2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dy32b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10.5)
+shape = SubResource("RectangleShape2D_kmcpr")

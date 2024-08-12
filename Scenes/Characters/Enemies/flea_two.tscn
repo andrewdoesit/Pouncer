@@ -48,7 +48,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sqid"]
-size = Vector2(26, 15)
+size = Vector2(26, 18)
 
 [node name="FleaTwo" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_nfcdf")
@@ -57,7 +57,7 @@ script = ExtResource("1_nfcdf")
 sprite_frames = SubResource("SpriteFrames_q3rd3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0.5)
+position = Vector2(-1, -1)
 shape = SubResource("RectangleShape2D_3sqid")
 
 [node name="CompCharactersGravity" type="Node" parent="." node_paths=PackedStringArray("character")]

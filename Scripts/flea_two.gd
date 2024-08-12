@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var flea = $AnimatedSprite2D
-@export var speed : float = 50
+@export var speed : float = 100
 @export var moving_left : bool = true
 @export var starting_position : Vector2
 @export var move_spaces : int = 200
